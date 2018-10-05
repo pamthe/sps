@@ -1,0 +1,9 @@
+package com.example.demo;
+
+public class FrierndUtility {
+	//validate email ID
+	public void validateEmailID() {
+		
+	}
+
+}

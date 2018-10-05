@@ -1,0 +1,11 @@
+package com.example.demo;
+
+public class FrierndUtility {
+	
+	//validate email ID
+	public boolean static validateEmailID(String emailID) {
+		return true;
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+create table friend
+(
+   id integer not null,
+   emailID varchar(255) not null,
+   friendList integer ,
+   subscriptionList integer ,
+   message varchar(255), 
+   primary key(id)
+);

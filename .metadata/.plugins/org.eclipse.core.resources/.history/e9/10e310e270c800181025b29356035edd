@@ -1,0 +1,84 @@
+package com.in28minutes.springboot.jdbc.h2.example.student;
+
+import java.util.Set;
+
+public class Friend {
+	private Long id;
+	private String emailID;
+	private Set<Long> friendList;
+	private Set<Long> subscriptionList;
+	private String message;
+
+	
+	public Friend() {
+		super();
+	}
+	
+	public Friend(Long id, String emailID, Set friendList,Set subscriptionList,String message) {
+		super();
+		this.id = id;
+		this.emailID = emailID;
+		this.friendList = friendList;
+		this.subscriptionList=subscriptionList;
+		this.message=message;
+	}
+
+	public Friend(Long id, String emailID) {
+		super();
+		this.emailID = emailID;
+	}
+
+	public Friend(Long id, String emailID,Set friendList) {
+		super();
+		this.emailID = emailID;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+	
+
+	public String getEmailID() {
+		return emailID;
+	}
+
+	public void setEmailID(String emailID) {
+		this.emailID = emailID;
+	}
+	
+	public Set<Long> getFriendList() {
+		return friendList;
+	}
+
+	public void setFriendList(Set friendList) {
+		this.friendList = friendList;
+	}
+	public Set<Long> getSubscriptionList() {
+		return subscriptionList;
+	}
+
+	public void setSubscriptionList(Set<Long> subscriptionList) {
+		this.subscriptionList = subscriptionList;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+
+	@Override
+	public String toString() {
+		return String.format("Friend [id=%s, name=%s, emailID=%s, friendList=%s]", id, name, emailID, friendList);
+	}
+
+}

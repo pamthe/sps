@@ -1,0 +1,20 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+
+public class ConnectFriends {
+	FriendsSvc friendsSvc;
+	@RequestMapping()
+	@Post
+	@Consumes({MediaType.APPLICATION_JSON})
+	@Produces({MediaType.APPLICATION_JSON})
+	public String connectFriends(String friend1, String friend2) {
+		if(FrierndUtility.validateEmailID(friend1) && FrierndUtility.validateEmailID(friend2))
+			friendsSvc.connectFriends(friend1, friend2);
+		else
+			throw new InvalidInputException("Invalid email ID");
+	}
+	
+}

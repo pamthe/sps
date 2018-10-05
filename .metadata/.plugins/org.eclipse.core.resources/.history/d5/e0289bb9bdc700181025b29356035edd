@@ -1,0 +1,21 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+
+public class ConnectFriends {
+	FriendsSvc friendsSvc;
+	@RequestMapping(value="/connectFriends",method=RequestMethod.POST,consumes= {"application/JSON"}, produces= {"application/JSON"})
+	public String connectFriends(String friend1, String friend2) {
+		boolean result;
+		if(FrierndUtility.validateEmailID(friend1) && FrierndUtility.validateEmailID(friend2))
+			result=friendsSvc.connectFriends(friend1, friend2);
+		else
+			throw new InvalidInputException("Invalid email ID");
+		
+	}
+	return result;
+}

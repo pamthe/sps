@@ -1,0 +1,8 @@
+insert into friend
+values(10001,'preeta@gmail.com',1002,null,null);
+
+insert into friend
+values(10002,'reeta@gmail.com',10001,null);
+
+insert into friend
+values(10001,'ankush@gmail.com',1002,null,null);

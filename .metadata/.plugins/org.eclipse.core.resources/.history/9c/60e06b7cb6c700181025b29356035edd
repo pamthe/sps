@@ -1,0 +1,16 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+
+public class ConnectFriends {
+	FriendsSvc friendsSvc;
+	
+	@POST
+	public String connectFriends(String friend1, String friend2) {
+		if(FrierndUtility.validateEmailID(friend1) && FrierndUtility.validateEmailID(friend2))
+		friendsSvc.connectFriends(friend1, friend2);
+	}
+	
+}

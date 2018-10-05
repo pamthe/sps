@@ -1,0 +1,71 @@
+package com.in28minutes.springboot.jdbc.h2.example.Friend;
+
+public class Friend {
+	private Long id;
+	private String name;
+	private String emailID;
+	private String friendList;
+
+	public Friend() {
+		super();
+	}
+	
+	public Friend(Long id, String name, String emailID, String friendList) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.emailID = emailID;
+		this.friendList = friendList;
+	}
+
+	public Friend(Long id, String name, String emailID) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.emailID = emailID;
+	}
+
+	public Friend(String name, String emailID) {
+		super();
+		this.name = name;
+		this.emailID = emailID;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmailID() {
+		return emailID;
+	}
+
+	public void setEmailID(String emailID) {
+		this.emailID = emailID;
+	}
+	
+	public String getFriendList() {
+		return friendList;
+	}
+
+	public void setFriendList(String friendList) {
+		this.friendList = friendList;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("Friend [id=%s, name=%s, emailID=%s, friendList=%s]", id, name, emailID,friendList);
+	}
+
+}

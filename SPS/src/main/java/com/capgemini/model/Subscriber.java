@@ -1,15 +1,12 @@
 package com.capgemini.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-public class UserRequest {
-	
+public class Subscriber {
+
 	@NotNull 
 	@NotEmpty(message = "{requestorEmail.notempty}") 
 	@Email(message = "{requestorEmail.valid}")
@@ -21,6 +18,12 @@ public class UserRequest {
 	@Email(message = "{targetEmail.valid}")
 	@Size(max = 30, message = "{targetEmail.size}")
 	String target;
+
+
+	public Subscriber() {
+
+	}
+
 
 	public String getRequestor() {
 		return requestor;
@@ -34,6 +37,6 @@ public class UserRequest {
 	public void setTarget(String target) {
 		this.target = target;
 	}
-	
+
 
 }

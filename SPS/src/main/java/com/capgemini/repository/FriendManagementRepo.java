@@ -167,25 +167,6 @@ public class FriendManagementRepo {
 			commonFrndListresponse.setStatus("Failed");
 		}
 		return commonFrndListresponse;
-//		String friendList1 = getFriendList(email1);
-//		String friendList2 = getFriendList(email2);
-//		String[] friendList1Container = friendList1.split(",");
-//		String[] friendList2Container = friendList2.split(",");
-//
-//		Set<String> friend1Set = new HashSet<String>(Arrays.asList(friendList1Container));
-//		Set<String> friend2Set = new HashSet<String>(Arrays.asList(friendList2Container));
-//		friend1Set.retainAll(friend2Set);
-//
-//		List<String> friends = getEmailByIds(new ArrayList<String>(friend1Set));
-//		if(friends.size() == 0) {
-//			commonFrndListresponse.setStatus("Failed");
-//		}else {
-//			commonFrndListresponse.setStatus("success");
-//			commonFrndListresponse.setCount(friends.size());
-//			for (String friend : friends) {
-//				commonFrndListresponse.getFriends().add(friend);
-//			}}
-//		return commonFrndListresponse;
 	} 
 
 	/** This method is used to get all the email from the friend table

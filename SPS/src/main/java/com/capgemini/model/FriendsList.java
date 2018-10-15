@@ -3,10 +3,12 @@ package com.capgemini.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommonFriendsListResponse {
+public class FriendsList {
+	
 	public String status;
 	public int count;
 	public List<String> friends = new ArrayList<String>();
+	
 	
 	public String getStatus() {
 		return status;
@@ -27,4 +29,8 @@ public class CommonFriendsListResponse {
 		this.friends = friends;
 	}
 	
+	
+	
+	
+
 }

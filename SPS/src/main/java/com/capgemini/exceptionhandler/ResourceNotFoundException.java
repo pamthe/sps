@@ -1,4 +1,4 @@
-package com.capgemini.exceptionhandling;
+package com.capgemini.exceptionhandler;
 
 public class ResourceNotFoundException extends Exception {
 

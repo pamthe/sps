@@ -3,7 +3,7 @@ package com.capgemini.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmailsListRecievesUpdatesResponse {
+public class EmailsListRecievesUpdatesRespBean {
 
 	
 	public String status;

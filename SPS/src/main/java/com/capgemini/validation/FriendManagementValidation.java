@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class FriendManagementValidation {
    
 	String status;
-	String errorDescription;
+	String message;
 	
 	public String getStatus() {
 		return status;
@@ -16,22 +16,22 @@ public class FriendManagementValidation {
 		this.status = status;
 	}
 
-	public String getErrorDescription() {
-		return errorDescription;
+	public String getMessage() {
+		return message;
 	}
 
-	public void setErrorDescription(String errorDescription) {
-		this.errorDescription = errorDescription;
+	public void setMessage(String errorDescription) {
+		this.message = errorDescription;
 	}
 	
 	public FriendManagementValidation() {
 		
 	}
 	
-	public FriendManagementValidation(String status, String errorDescription) {
+	public FriendManagementValidation(String status, String message) {
 		super();
 		this.status = status;
-		this.errorDescription = errorDescription;
+		this.message = message;
 	}
 	
 	

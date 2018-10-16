@@ -1,12 +1,14 @@
-package com.capgemini.model;
+package com.capgemini.DTO;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommonFriendsListRespBean {
+public class FriendsList {
+	
 	public String status;
 	public int count;
 	public List<String> friends = new ArrayList<String>();
+	
 	
 	public String getStatus() {
 		return status;
@@ -27,4 +29,8 @@ public class CommonFriendsListRespBean {
 		this.friends = friends;
 	}
 	
+	
+	
+	
+
 }

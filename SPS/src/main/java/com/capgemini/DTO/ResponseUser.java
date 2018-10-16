@@ -1,4 +1,4 @@
-package com.capgemini.model;
+package com.capgemini.DTO;
 
 import java.util.Date;
 

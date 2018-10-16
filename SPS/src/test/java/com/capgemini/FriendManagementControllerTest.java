@@ -18,12 +18,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.validation.BindingResult;
 
+import com.capgemini.DTO.CommonFriendsListRespBean;
+import com.capgemini.DTO.FriendsList;
 import com.capgemini.controller.FriendManagementController;
 import com.capgemini.exceptionhandler.ResourceNotFoundException;
 import com.capgemini.model.CommonFriendsListBean;
-import com.capgemini.model.CommonFriendsListRespBean;
 import com.capgemini.model.Friend;
-import com.capgemini.model.FriendsList;
 import com.capgemini.model.ConnectFriends;
 import com.capgemini.repository.FriendManagementRepo;
 import com.capgemini.service.FrientManagementService;

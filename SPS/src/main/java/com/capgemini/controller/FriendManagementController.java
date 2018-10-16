@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.capgemini.DTO.CommonFriendsListRespBean;
+import com.capgemini.DTO.EmailsListRecievesUpdatesRespBean;
+import com.capgemini.DTO.FriendsList;
 import com.capgemini.exceptionhandler.ResourceNotFoundException;
-import com.capgemini.model.CommonFriendsListRespBean;
 import com.capgemini.model.ConnectFriends;
-import com.capgemini.model.EmailsListRecievesUpdatesRespBean;
-import com.capgemini.model.FriendsList;
 import com.capgemini.service.FrientManagementService;
 import com.capgemini.validation.FriendManagementValidation;
 

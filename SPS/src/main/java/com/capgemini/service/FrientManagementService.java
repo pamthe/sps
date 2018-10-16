@@ -3,11 +3,11 @@ package com.capgemini.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.capgemini.DTO.CommonFriendsListRespBean;
+import com.capgemini.DTO.EmailsListRecievesUpdatesRespBean;
+import com.capgemini.DTO.FriendsList;
 import com.capgemini.exceptionhandler.ResourceNotFoundException;
-import com.capgemini.model.CommonFriendsListRespBean;
 import com.capgemini.model.ConnectFriends;
-import com.capgemini.model.EmailsListRecievesUpdatesRespBean;
-import com.capgemini.model.FriendsList;
 import com.capgemini.repository.FriendManagementRepo;
 import com.capgemini.validation.FriendManagementValidation;
 

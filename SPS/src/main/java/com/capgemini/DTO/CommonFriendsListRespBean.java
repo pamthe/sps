@@ -1,15 +1,12 @@
-package com.capgemini.model;
+package com.capgemini.DTO;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmailsListRecievesUpdatesRespBean {
-
-	
+public class CommonFriendsListRespBean {
 	public String status;
-	
+	public int count;
 	public List<String> friends = new ArrayList<String>();
-	
 	
 	public String getStatus() {
 		return status;
@@ -17,7 +14,12 @@ public class EmailsListRecievesUpdatesRespBean {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
 	public List<String> getFriends() {
 		return friends;
 	}

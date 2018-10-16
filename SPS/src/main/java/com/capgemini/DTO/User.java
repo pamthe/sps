@@ -1,12 +1,10 @@
-package com.capgemini.model;
+package com.capgemini.DTO;
 
 public class User {
 
 	 Integer id;
 	 String user_name;
 	 String user_email;
-	 
-	 
 	 
 	public User() {
 		super();

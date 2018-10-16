@@ -8,12 +8,12 @@ import javax.validation.constraints.Size;
 public class EmailRecievesUpdatesBean {
 
 	@NotNull 
-	@NotEmpty(message = "{senderEmail.notempty}") 
-	@Email(message = "{senderEmail.valid}")
-    @Size(max = 30, message = "{senderEmail.size}")
+	@NotEmpty(message = "Sender email should not be empty.") 
+	@Email(message = "Give valid sender email id")
+    @Size(max = 30, message = "Sender email should not be more than 30 charaters")
 	private String sender;
 	@NotNull
-	@NotEmpty(message = "{message.notempty}")
+	@NotEmpty(message = "Message should not be empty")
 	private String text;
 	
 	public String getSender() {

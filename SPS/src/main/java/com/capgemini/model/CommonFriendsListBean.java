@@ -13,7 +13,7 @@ public class CommonFriendsListBean {
 
 	@NotNull
 	@NotEmpty
-	@Size(max = 4, message = "{friendArraySize.size}")
+	@Size(max = 4, message = "More that two emails will not be accepted")
 	private List<@Valid @NotEmpty @NotNull @Email  String> friends;
 
 	public List<String> getFriends() {

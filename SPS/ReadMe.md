@@ -56,7 +56,7 @@ H2, in memory database which is fast & serves the need of this POC.
 		
 		
 		Error handling
-		400 – Bad request
+		500 - Internal server error - error thrown from validator framework in case of erroneous input
 
 	2.	To get list of friends of given user
 
@@ -78,7 +78,7 @@ H2, in memory database which is fast & serves the need of this POC.
 		}
 		
 		Error handling
-		400 – Bad request
+		500 - Internal server error - error thrown from validator framework in case of erroneous input
 
 	3.	To get list of common friends between 2 users
 		Path – /showCommonFriends
@@ -100,6 +100,7 @@ H2, in memory database which is fast & serves the need of this POC.
 		
 		Error handling
 		400 – Bad request
+		500 - Internal server error - error thrown from validator framework in case of erroneous input
 
 
 
@@ -121,6 +122,7 @@ H2, in memory database which is fast & serves the need of this POC.
 		
 		Error handling
 		400 – Bad request
+		500 - Internal server error - error thrown from validator framework in case of erroneous input
 
 	5.	To enable unsubscription from requester to target
 		Path – /unsubscriber
@@ -140,6 +142,7 @@ H2, in memory database which is fast & serves the need of this POC.
 		
 		Error handling
 		400 – Bad request
+		500 - Internal server error - error thrown from validator framework in case of erroneous input
 
 
 	6.	To get list of subscribers
@@ -162,6 +165,7 @@ H2, in memory database which is fast & serves the need of this POC.
 		
 		Error handling
 		400 – Bad request
+		500 - Internal server error - error thrown from validator framework in case of erroneous input
 
 
 ## Database

@@ -11,9 +11,9 @@ import javax.validation.constraints.Size;
 public class Friend {
 	
 	@NotNull 
-	@NotEmpty(message = "{requestorEmail.notempty}") 
-	@Email(message = "{requestorEmail.valid}")
-	@Size(max = 30, message = "{requestorEmail.size}")
+	@NotEmpty(message = "Please provide requestor email id.") 
+	@Email(message = "Give valid requestor email id.")
+	@Size(max = 30, message = "Requestor email should not be more than 5 charaters")
 	private String email;
 
 	public String getEmail() {

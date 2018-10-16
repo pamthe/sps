@@ -8,9 +8,9 @@ import javax.validation.constraints.Size;
 public class UserEmail {
 	
 	@NotNull 
-	@NotEmpty(message = "{createFriendEmail.notempty}") 
-	@Email(message = "{createFriendEmail.valid}")
-    @Size(max = 30, message = "{createFriendEmail.size}")
+	@NotEmpty(message = "Please provide the email id") 
+	@Email(message = "Please provide the valid email id")
+    @Size(max = 30, message = "email should not be more than 30 charaters")
 	private String email;
 
 	public String getEmail() {
